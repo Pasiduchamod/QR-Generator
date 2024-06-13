@@ -4,6 +4,17 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <script src="script.js"></script>
+        <div class="container">
+            <p>Enter Your Text or URL</p>
+            <input type="text" placeholder="Text or URL" id="qrText">
+            <p id="errorId"></p>
+            <div id="imgBox">
+                <img src="" id="qrImage">
+            </div>
+            <button onclick="generateQR()">Generate QR</button>
+            <button id="downloadBtn" style="display: none;">Download QR</button>
+            <a id="downloadLink" style="display:none"></a>
+        </div>
+        <script src="script.js"> </script>
     </body>
 </html>
